@@ -209,7 +209,9 @@
         "dependsOn": [
           {
             "activity": "Get SQL Tables to Ingest",
-            "dependencyConditions": ["Succeeded"]
+            "dependencyConditions": [
+              "Succeeded"
+            ]
           }
         ]
       },
@@ -252,7 +254,9 @@
         "dependsOn": [
           {
             "activity": "ForEach SQL Table",
-            "dependencyConditions": ["Completed"]
+            "dependencyConditions": [
+              "Completed"
+            ]
           }
         ]
       },
@@ -299,7 +303,9 @@
         "dependsOn": [
           {
             "activity": "Level 1 Transform SILVER",
-            "dependencyConditions": ["Completed"]
+            "dependencyConditions": [
+              "Completed"
+            ]
           }
         ]
       }

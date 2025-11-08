@@ -23,7 +23,9 @@
         "dependsOn": [
           {
             "activity": "Set RunID",
-            "dependencyConditions": ["Succeeded"]
+            "dependencyConditions": [
+              "Succeeded"
+            ]
           }
         ],
         "policy": {
@@ -74,7 +76,9 @@
         "dependsOn": [
           {
             "activity": "Level1 Transform RUNNING",
-            "dependencyConditions": ["Succeeded"]
+            "dependencyConditions": [
+              "Succeeded"
+            ]
           }
         ],
         "policy": {
@@ -252,7 +256,9 @@
         "dependsOn": [
           {
             "activity": "ForEach Level 2 Config",
-            "dependencyConditions": ["Succeeded"]
+            "dependencyConditions": [
+              "Succeeded"
+            ]
           }
         ],
         "policy": {
@@ -331,7 +337,9 @@
         "dependsOn": [
           {
             "activity": "Level 1 Transform Notebook",
-            "dependencyConditions": ["Succeeded"]
+            "dependencyConditions": [
+              "Succeeded"
+            ]
           }
         ],
         "policy": {
@@ -352,7 +360,9 @@
         "dependsOn": [
           {
             "activity": "Level 1 Transform Notebook",
-            "dependencyConditions": ["Succeeded"]
+            "dependencyConditions": [
+              "Succeeded"
+            ]
           }
         ],
         "policy": {
@@ -373,7 +383,9 @@
         "dependsOn": [
           {
             "activity": "Level 1 Transform Notebook",
-            "dependencyConditions": ["Succeeded"]
+            "dependencyConditions": [
+              "Succeeded"
+            ]
           }
         ],
         "policy": {
@@ -394,19 +406,27 @@
         "dependsOn": [
           {
             "activity": "Set numTargetRowsInserted",
-            "dependencyConditions": ["Succeeded"]
+            "dependencyConditions": [
+              "Succeeded"
+            ]
           },
           {
             "activity": "Set numSourceRows",
-            "dependencyConditions": ["Succeeded"]
+            "dependencyConditions": [
+              "Succeeded"
+            ]
           },
           {
             "activity": "Set numTargetRowsUpdated",
-            "dependencyConditions": ["Succeeded"]
+            "dependencyConditions": [
+              "Succeeded"
+            ]
           },
           {
             "activity": "Set numTargetRowsDeleted",
-            "dependencyConditions": ["Succeeded"]
+            "dependencyConditions": [
+              "Succeeded"
+            ]
           }
         ],
         "policy": {
@@ -452,7 +472,9 @@
         "dependsOn": [
           {
             "activity": "Get Level 2 Transform Config",
-            "dependencyConditions": ["Succeeded"]
+            "dependencyConditions": [
+              "Succeeded"
+            ]
           }
         ],
         "typeProperties": {
@@ -702,7 +724,9 @@
         "dependsOn": [
           {
             "activity": "Level 1 Transform Notebook",
-            "dependencyConditions": ["Failed"]
+            "dependencyConditions": [
+              "Failed"
+            ]
           }
         ],
         "policy": {
@@ -753,7 +777,9 @@
         "dependsOn": [
           {
             "activity": "Level 1 Transform Notebook",
-            "dependencyConditions": ["Succeeded"]
+            "dependencyConditions": [
+              "Succeeded"
+            ]
           }
         ],
         "policy": {

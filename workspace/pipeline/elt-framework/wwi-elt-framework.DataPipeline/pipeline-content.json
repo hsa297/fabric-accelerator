@@ -35,7 +35,10 @@
             "writeBehavior": "upsert",
             "upsertSettings": {
               "useTempDB": true,
-              "keys": ["SourceSystemName", "StreamName"]
+              "keys": [
+                "SourceSystemName",
+                "StreamName"
+              ]
             },
             "sqlWriterUseTableLock": false,
             "disableMetricsCollection": false,
@@ -267,7 +270,9 @@
         "dependsOn": [
           {
             "activity": "WWI_Ingest_Definition",
-            "dependencyConditions": ["Succeeded"]
+            "dependencyConditions": [
+              "Succeeded"
+            ]
           }
         ],
         "policy": {
@@ -505,7 +510,9 @@
         "dependsOn": [
           {
             "activity": "WWI_L1T_Definition",
-            "dependencyConditions": ["Succeeded"]
+            "dependencyConditions": [
+              "Succeeded"
+            ]
           }
         ],
         "policy": {
@@ -542,11 +549,15 @@
         "dependsOn": [
           {
             "activity": "Get WWI PK cols",
-            "dependencyConditions": ["Succeeded"]
+            "dependencyConditions": [
+              "Succeeded"
+            ]
           },
           {
             "activity": "Update Notebook ID",
-            "dependencyConditions": ["Succeeded"]
+            "dependencyConditions": [
+              "Succeeded"
+            ]
           }
         ],
         "typeProperties": {
@@ -621,7 +632,9 @@
         "dependsOn": [
           {
             "activity": "WWI_L1T_Definition",
-            "dependencyConditions": ["Succeeded"]
+            "dependencyConditions": [
+              "Succeeded"
+            ]
           }
         ],
         "policy": {
@@ -665,7 +678,9 @@
         "dependsOn": [
           {
             "activity": "ForEach PK",
-            "dependencyConditions": ["Succeeded"]
+            "dependencyConditions": [
+              "Succeeded"
+            ]
           }
         ],
         "policy": {

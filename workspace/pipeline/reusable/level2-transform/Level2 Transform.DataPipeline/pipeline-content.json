@@ -23,7 +23,9 @@
         "dependsOn": [
           {
             "activity": "Set RunID",
-            "dependencyConditions": ["Succeeded"]
+            "dependencyConditions": [
+              "Succeeded"
+            ]
           }
         ],
         "policy": {
@@ -259,7 +261,9 @@
         "dependsOn": [
           {
             "activity": "L2Transform - RUNNING",
-            "dependencyConditions": ["Succeeded"]
+            "dependencyConditions": [
+              "Succeeded"
+            ]
           }
         ],
         "policy": {
@@ -485,7 +489,9 @@
         "dependsOn": [
           {
             "activity": "EXEC L2Transform",
-            "dependencyConditions": ["Succeeded"]
+            "dependencyConditions": [
+              "Succeeded"
+            ]
           }
         ],
         "policy": {
@@ -580,7 +586,9 @@
         "dependsOn": [
           {
             "activity": "EXEC L2Transform",
-            "dependencyConditions": ["Failed"]
+            "dependencyConditions": [
+              "Failed"
+            ]
           }
         ],
         "policy": {

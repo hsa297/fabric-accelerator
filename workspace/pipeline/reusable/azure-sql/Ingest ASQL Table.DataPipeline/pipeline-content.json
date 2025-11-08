@@ -7,7 +7,9 @@
         "dependsOn": [
           {
             "activity": "Set RunID",
-            "dependencyConditions": ["Succeeded"]
+            "dependencyConditions": [
+              "Succeeded"
+            ]
           }
         ],
         "policy": {
@@ -91,7 +93,9 @@
         "dependsOn": [
           {
             "activity": "Insert Ingest Instance - RUNNING",
-            "dependencyConditions": ["Succeeded"]
+            "dependencyConditions": [
+              "Succeeded"
+            ]
           }
         ],
         "policy": {
@@ -180,7 +184,9 @@
         "dependsOn": [
           {
             "activity": "Insert Ingest Instance - RUNNING",
-            "dependencyConditions": ["Succeeded"]
+            "dependencyConditions": [
+              "Succeeded"
+            ]
           }
         ],
         "policy": {
@@ -219,7 +225,9 @@
         "dependsOn": [
           {
             "activity": "Update High Watermark",
-            "dependencyConditions": ["Succeeded"]
+            "dependencyConditions": [
+              "Succeeded"
+            ]
           }
         ],
         "policy": {
@@ -291,7 +299,9 @@
         "dependsOn": [
           {
             "activity": "Copy Source to Lakehouse",
-            "dependencyConditions": ["Failed"]
+            "dependencyConditions": [
+              "Failed"
+            ]
           }
         ],
         "policy": {
@@ -335,11 +345,15 @@
         "dependsOn": [
           {
             "activity": "Get High Watermark",
-            "dependencyConditions": ["Succeeded"]
+            "dependencyConditions": [
+              "Succeeded"
+            ]
           },
           {
             "activity": "Copy Source to Lakehouse",
-            "dependencyConditions": ["Succeeded"]
+            "dependencyConditions": [
+              "Succeeded"
+            ]
           }
         ],
         "policy": {
@@ -385,7 +399,9 @@
         "dependsOn": [
           {
             "activity": "Get Level 1 Transform Config",
-            "dependencyConditions": ["Succeeded"]
+            "dependencyConditions": [
+              "Succeeded"
+            ]
           }
         ],
         "typeProperties": {
@@ -579,7 +595,9 @@
         "dependsOn": [
           {
             "activity": "ForEach Level 1 Config",
-            "dependencyConditions": ["Succeeded"]
+            "dependencyConditions": [
+              "Succeeded"
+            ]
           }
         ],
         "policy": {
@@ -625,7 +643,9 @@
         "dependsOn": [
           {
             "activity": "Get Level 2 Transform Config",
-            "dependencyConditions": ["Succeeded"]
+            "dependencyConditions": [
+              "Succeeded"
+            ]
           }
         ],
         "typeProperties": {
@@ -875,7 +895,9 @@
         "dependsOn": [
           {
             "activity": "ForEach Level 2 Config",
-            "dependencyConditions": ["Succeeded"]
+            "dependencyConditions": [
+              "Succeeded"
+            ]
           }
         ],
         "policy": {

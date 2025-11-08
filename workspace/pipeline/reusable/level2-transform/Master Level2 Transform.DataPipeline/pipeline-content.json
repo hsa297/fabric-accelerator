@@ -231,7 +231,9 @@
         "dependsOn": [
           {
             "activity": "Get Level2 Transform Instances",
-            "dependencyConditions": ["Succeeded"]
+            "dependencyConditions": [
+              "Succeeded"
+            ]
           }
         ]
       }
